@@ -1,0 +1,8 @@
+PRGNAM="EORTOLOGIO"
+VERSION=""
+HOMEPAGE="https://github.com/fanisatt/EORTOLOGIO-GR"
+DOWNLOAD_x86_64="https://tinyurl.com/EORTOLOGIO-GR"
+REQUIRES="%README%"
+MAINTAINER="Anagnostakis Ioannis"
+EMAIL="rizitis@gmail.com"
+

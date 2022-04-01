@@ -1,0 +1,26 @@
+GReortes2 is a powerfull and portable calendar application for Linux 64bit OSs.
+It is written in C language.
+It includes Greek religious feasts, Greek names and global/international days.
+(EORTOLOGIO)
+It presents basic astronomical data !
+Some guys say it's one of the best ....
+Code : https://github.com/fanisatt/EORTOLOGIO-GR
+Details in Greek !
+
+Many - many Thanks to : 
+- Dr.GUIDO GONZATO who created the special SDL_bgi 
+graphics compatibility library !
+- Alexis López Zubieta who created the application image maker tool !
+- Sky & Telescope Astronomy Magazine from which I used 
+astronomical data calculation algorithms to make the corresponding C functions
+about Sunrise/Sunset and Moonrise/Moonset !
+- TorLab (https://github.com/faytor) for the C code (based on the same magazine)
+about the moon phases. 
+
+PLEASE REPORT ANY BUGS - PROBLEMS !! 
+
+sdl2 library is a dependency for running the app.
+
+Sincerely Yours
+Fanis Attard
+(email : fanisatt@yahoo.gr) 

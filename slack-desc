@@ -1,0 +1,18 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+       |-----handy-ruler------------------------------------------------------|
+GREORTE: GReortes (portable calendar application for Linux 64bit OSs)
+GREORTE:
+GREORTE: It includes Greek religious feasts, Greek names 
+GREORTE: and global / international days. (EORTOLOGIO)
+GREORTE: Greeks can search for ... a lot of interesting things here
+GREORTE: thousand of names,dates and days from 01/01/001 a.C to 31/12/2500 a.C
+GREORTE: and over 600 religious feasts (from year 2000 A.C. to 2500 A.C.)
+GREORTE:
+GREORTE: homepage: https://sourceforge.net/projects/eortologio-gr/
+GREORTE: 

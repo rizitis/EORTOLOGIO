@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Terminal=false
+Exec=sh -c "$HOME/EORTOLOGIO/GReortes2.5-latest-x86_64.AppImage"
+Icon=eortes
+Type=Application
+Categories=Application;Office;
+Name=Eortologio
