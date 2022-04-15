@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# Slackware build script for EORTOLOGIO
+
+# 2022 Anagnostakis Ioannis rizitis@gmail.com
+# 
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+cd $(dirname $0) ; CWD=$(pwd)
+
+PRGNAM=EORTOLOGIO_v
+VERSION=${VERSION:-3}
+
+
+
+
+
+TMP=$HOME	# For consistency's sake, use this
+PKG=$TMP/package-$PRGNAM
+OUTPUT=$HOME	# Drop the package in /user/home
+
+
+set -e # Exit on most errors
+# If you prefer to do selective error checking with
+#   command || exit 1
+# then that's also acceptable.
+
+#cp appimage.desktop file
+rm -f $HOME/EORTOLOGIO/eortologio.desktop
+rm -f $HOME/.local/share/applications/eortologio.desktop
+rm -f $HOME/.local/share/icons/eortes.png
+cp eortologio.desktop $HOME/.local/share/applications/
+chmod 755 $HOME/.local/share/applications/eortologio.desktop
+
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+rm -rf $HOME/package-EORTOLOGIO_20_MAR_2022
+cd $TMP
+rm -rf $PRGNAM
+tar -xf $CWD/$PRGNAM.$VERSION.tar.gz 
+
+
+#download an app icon for use it on "Applications/Office" Menu entry.
+cd EORTOLOGIO
+mkdir -p $HOME/.local/share/icons
+wget -O eortes.png https://icons.iconarchive.com/icons/mattahan/buuf/48/A-Proper-Journal-Icon-icon.png
+cp eortes.png $HOME/.local/share/icons/
+
+clear
+
+
+echo ''
+echo ''
+echo '#-----------------------------------------------------------------------------------------#'
+echo '# Ok Slacker your app is ready for use, enjoy after you 'update-desktop-database' as root #'
+echo '#-----------------------------------------------------------------------------------------#'
+echo ''
+echo ''
+
+
+sleep 3
